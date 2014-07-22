@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0">
+    <title>Akmmos</title>
+	
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/other-size.css" />
+	
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/jquery.min.2.1.1.js"></script>
+    <script src="js/query.carouFredSel.js"></script>
+	
+	<!--[if IE]><script src="js/placeholder.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<script src="js/placeholder.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+	
+	<div class="b-main">
+		<div class="b-window-fill" id="windowFill"></div>
+	
+		<div class="b-popup b-popup_order-call" id="orderCall">
+			<div class="b-popup-in">
+				<div class="b-popup__close"></div>
+				<div class="b-popup__title">Обратный звонок</div>
+				
+				<form action="">
+					<input type="text" placeholder="Ваше имя" class="b-input-text"/>
+					<input type="text" placeholder="Ваш телефон" class="b-input-text"/>
+					<input type="submit" class="btn-submit-blue"/>
+				</form>
+			</div>
+		</div> <!-- end b-popup -->
+		
+		<div class="b-popup b-popup_video" id="videoPopup">
+			<div class="b-popup-in">
+				<div class="b-popup__close"></div>
+				<div class="b-popup__title">Впечатлитесь представленными экземплярами на выставке</div>
+				<div class="b-video-play">
+				</div>
+			</div>
+		</div> <!-- end b-popup -->
+	
+		<section class="b-index-section b-index-section_furniture">
+			
+			<div class="b-header-height-fix"></div>
+			
+			<header class="b-header">
+				<div class="b-main-center">
+				
+					<a href="#" class="b-logo" title=""><img src="images/header-logo.png" alt=""/></a>
+					<div class="b-furniture__link"><a href="http://akmmos.ru/" title="Посмотреть каталог мебели">Посмотреть каталог мебели</a></div>
+					<div class="b-header-right">
+						<div class="b-order-call">
+							<a href="javascript:void(0)" onclick="showPopup($('#orderCall'))" class="b-order-call__link">Заказать звонок</a>
+						</div>
+						<div class="b-phone-number">
+							<img src="images/number-495.png" class="b-phone-number__code" alt=""/>
+							966-23-90
+						</div>
+						<div class="b-schedule">365 дней в году с 10 до 20</div>
+						
+					</div>
+					
+					<div class="g-clear"></div>
+					
+					<div class="b-menu-block">
+						<nav class="b-top-menu">
+							<ul class="b-top-menu__list">
+								<li class="b-top-menu__item"><a href="#" title="Контакты">Контакты</a></li>
+								<li class="b-top-menu__item">
+									<a href="#" title="Информация">Информация <span class="b-top-menu__arrow"></span></a>
+									<div class="b-menu-sub">
+										<div class="b-main-center">
+											<ul class="b-menu-sub__list">
+												<li class="b-menu-sub__item"><a href="#" title="Информация">Информация</a></li>
+												<li class="b-menu-sub__item"><a href="#" title="Информация">Информация</a></li>
+												<li class="b-menu-sub__item"><a href="#" title="Информация">Информация</a></li>
+												<li class="b-menu-sub__item"><a href="#" title="Информация">Информация</a></li>
+											</ul>
+											<div class="g-clear"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</nav> <!-- end b-top-menu -->
+						
+						<div class="b-top-search">
+							<form action="">
+								<input type="text" class="b-top-search__input"/>
+								<input type="submit" value="" class="b-top-search__submit"/>
+							</form>
+						</div>
+						
+						<div class="b-cart-top"><a href="#" title="Корзина">Корзина <span class="b-cart-top__count">2</span>/120000 р.</a></div>
+						
+						<div class="g-clear"></div>
+					</div> <!-- end b-menu-block -->
+					
+				</div> <!-- end b-main-center -->
+			</header> <!-- end b-header -->
+			
+			<div class="b-main-center">
+				<div class="b-furniture">
+					<h2 class="b-furniture__title">Мебель от фабрики<br/>по немецким технологиям</h2>
+					<div class="b-furniture__catalog">Выбери <a href="#" title="спальни">спальни</a>, <a href="#" title="гостиные">гостиные</a>, <a href="#" title="кухни">кухни</a>, <a href="#" title="прихожие">прихожие</a></div>
+					<div class="b-furniture__link opacity"><a href="http://akmmos.ru/" title="Посмотреть каталог мебели">Посмотреть каталог мебели</a></div>
+					<div class="b-furniture-plus">
+						<div class="b-furniture-plus__item fadeIn">
+							<img src="images/furniture-plus-1.png" alt=""/>
+							<div class="b-furniture-plus__item-text">Доставка в<br/>день заказа</div>
+						</div>
+						<div class="b-furniture-plus__item fadeIn">
+							<img src="images/furniture-plus-2.png" alt=""/>
+							<div class="b-furniture-plus__item-text">Цены на 15%<br/>ниже Рыночных</div>
+						</div>
+						<div class="b-furniture-plus__item fadeIn">
+							<img src="images/furniture-plus-3.png" alt=""/>
+							<div class="b-furniture-plus__item-text">Выставка 700 м<sup>2</sup><br/>3500 товаров</div>
+						</div>
+						<div class="g-clear"></div>
+					</div>
+				</div>
+			</div> <!-- end b-main-center -->
+			
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_catalog">
+			<div class="b-main-center">
+				<h2 class="b-index-section_catalog-title">Мебель для Уюта и Тепла в Вашем Доме</h2>
+				
+				<div class="b-catalog">
+					<div class="b-catalog__item g-animated" data-animate-name="fadeIn">
+						<div class="b-catalog__item-pic">
+							<img src="images/catalog-picture-1.png" alt=""/>
+							<div class="b-catalog__item-overlay"></div>
+						</div>
+						<div class="b-catalog__item-right">
+							<h3>Спальня</h3>
+							<ul class="b-catalog__item-list">
+								<li class="b-catalog__item-list__item"><a href="#" title="Спальные гарнитуры">Спальные гарнитуры</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Комоды">Комоды</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Кровати">Кровати</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Матрасы">Матрасы</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Мебель для спальни">Мебель для спальни</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Шкафы в спальню">Шкафы в спальню</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Шкафы купе">Шкафы купе</a></li>
+							</ul>
+						</div>
+						<div class="g-clear"></div>
+					</div> <!-- end b-catalog__item -->
+					
+					<div class="b-catalog__item g-animated" data-animate-name="fadeIn">
+						<div class="b-catalog__item-pic">
+							<img src="images/catalog-picture-2.png" alt=""/>
+							<div class="b-catalog__item-overlay"></div>
+						</div>
+						<div class="b-catalog__item-right">
+							<h3>Прихожая</h3>
+							<ul class="b-catalog__item-list">
+								<li class="b-catalog__item-list__item"><a href="#" title="Прихожие">Прихожие</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Обувницы">Обувницы</a></li>
+							</ul>
+						</div>
+						<div class="g-clear"></div>
+					</div> <!-- end b-catalog__item -->
+					<div class="g-clear"></div>
+					
+					<div class="b-catalog__item g-animated" data-animate-name="fadeIn">
+						<div class="b-catalog__item-pic">
+							<img src="images/catalog-picture-3.png" alt=""/>
+							<div class="b-catalog__item-overlay"></div>
+						</div>
+						<div class="b-catalog__item-right">
+							<h3>Гостиная</h3>
+							<ul class="b-catalog__item-list">
+								<li class="b-catalog__item-list__item"><a href="#" title="Стенки">Стенки</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Столики в гостиную">Столики в гостиную</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Стеллажи и этажерки">Стеллажи и этажерки</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Полки в гостиную">Полки в гостиную</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="ТВ Тумбы">ТВ Тумбы</a></li>
+							</ul>
+						</div>
+						<div class="g-clear"></div>
+					</div> <!-- end b-catalog__item -->
+					
+					<div class="b-catalog__item g-animated" data-animate-name="fadeIn">
+						<div class="b-catalog__item-pic">
+							<img src="images/catalog-picture-4.png" alt=""/>
+							<div class="b-catalog__item-overlay"></div>
+						</div>
+						<div class="b-catalog__item-right">
+							<h3>Детская</h3>
+							<ul class="b-catalog__item-list">
+								<li class="b-catalog__item-list__item"><a href="#" title="Детские комнаты">Детские комнаты</a></li>
+							</ul>
+						</div>
+						<div class="g-clear"></div>
+					</div> <!-- end b-catalog__item -->
+					<div class="g-clear"></div>
+					
+					<div class="b-catalog__item g-animated" data-animate-name="fadeIn">
+						<div class="b-catalog__item-pic">
+							<img src="images/catalog-picture-5.png" alt=""/>
+							<div class="b-catalog__item-overlay"></div>
+						</div>
+						<div class="b-catalog__item-right">
+							<h3>Кухня и столы</h3>
+							<ul class="b-catalog__item-list">
+								<li class="b-catalog__item-list__item"><a href="#" title="Спальные гарнитуры">Спальные гарнитуры</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Комоды">Комоды</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Кровати">Кровати</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Матрасы">Матрасы</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Мебель для спальни">Мебель для спальни</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Шкафы в спальню">Шкафы в спальню</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Шкафы купе">Шкафы купе</a></li>
+							</ul>
+						</div>
+						<div class="g-clear"></div>
+					</div> <!-- end b-catalog__item -->
+					
+					<div class="b-catalog__item g-animated" data-animate-name="fadeIn">
+						<div class="b-catalog__item-pic">
+							<img src="images/catalog-picture-6.png" alt=""/>
+							<div class="b-catalog__item-overlay"></div>
+						</div>
+						<div class="b-catalog__item-right">
+							<h3>Прочая мебель</h3>
+							<ul class="b-catalog__item-list">
+								<li class="b-catalog__item-list__item"><a href="#" title="Прямые диваны">Прямые диваны</a></li>
+								<li class="b-catalog__item-list__item"><a href="#" title="Кресла">Кресла</a></li>
+							</ul>
+						</div>
+						<div class="g-clear"></div>
+					</div> <!-- end b-catalog__item -->
+					<div class="g-clear"></div>
+				</div> <!-- end b-catalog -->
+				
+			</div> <!-- end b-main-center -->
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_popular">
+			<div class="b-main-center">
+				<div class="line"></div>
+				<h2 class="b-index-section_popular-title">Популярные товары</h2>
+				
+				<div class="b-carousel g-animated" id="carouselPopular" data-animate-name="opacity">
+					<div class="b-carousel-in">
+						<div class="b-carousel__item">
+							<h3 class="b-carousel__item-title">Чудо диван</h3>
+							<div class="b-carousel__item-pic">
+								<img src="images/popular-picture-1.jpg" alt="" style="margin-top:-70px;"/>
+							</div>
+							<div class="b-carousel__item-price">48.900 руб.</div>
+							<a href="#" class="b-btn-buy">Купить</a>
+							<div class="b-carousel__item-link"><a href="#" title="Подробнее">Подробнее</a></div>
+							<div class="b-carousel__item-border"></div>
+						</div>
+						<div class="b-carousel__item">
+							<h3 class="b-carousel__item-title">Чудо диван</h3>
+							<div class="b-carousel__item-pic">
+								<img src="images/popular-picture-1.jpg" alt="" style="margin-top:-70px;"/>
+							</div>
+							<div class="b-carousel__item-price">48.900 руб.</div>
+							<a href="#" class="b-btn-buy">Купить</a>
+							<div class="b-carousel__item-link"><a href="#" title="Подробнее">Подробнее</a></div>
+							<div class="b-carousel__item-border"></div>
+						</div>
+						<div class="b-carousel__item">
+							<h3 class="b-carousel__item-title">Чудо диван</h3>
+							<div class="b-carousel__item-pic">
+								<img src="images/popular-picture-1.jpg" alt="" style="margin-top:-70px;"/>
+							</div>
+							<div class="b-carousel__item-price">48.900 руб.</div>
+							<a href="#" class="b-btn-buy">Купить</a>
+							<div class="b-carousel__item-link"><a href="#" title="Подробнее">Подробнее</a></div>
+							<div class="b-carousel__item-border"></div>
+						</div>
+						<div class="b-carousel__item">
+							<h3 class="b-carousel__item-title">Чудо диван</h3>
+							<div class="b-carousel__item-pic">
+								<img src="images/popular-picture-1.jpg" alt="" style="margin-top:-70px;"/>
+							</div>
+							<div class="b-carousel__item-price">48.900 руб.</div>
+							<a href="#" class="b-btn-buy">Купить</a>
+							<div class="b-carousel__item-link"><a href="#" title="Подробнее">Подробнее</a></div>
+							<div class="b-carousel__item-border"></div>
+						</div>
+					</div>
+					<div class="g-clear"></div>
+					
+					<div class="b-carousel__prev"></div>
+					<div class="b-carousel__next"></div>
+					<div class="b-carousel__nav"></div>
+				</div> <!-- end b-carousel -->
+				
+			</div> <!-- end b-main-center -->
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_show">
+		
+			<div class="b-carousel-show g-animated" id="carouselShow" data-animate-name="opacity">
+				<div class="b-carousel-show-in">
+					<div class="b-carousel-show__item">
+						<div class="b-carousel-show__item-pic">
+							<img src="images/temp/section-show-1.jpg" alt=""/>
+						</div>
+						
+						<div class="b-carousel-show__item-title">	
+							<div class="b-main-center">
+								Посетите магазин мебели площадью 700 м<sup>2</sup> Москва, Иркутская 11 к. 14
+							</div>
+						</div>
+					</div>
+					
+					<div class="b-carousel-show__item">
+						<div class="b-carousel-show__item-pic">
+							<img src="images/temp/section-show-2.jpg" alt=""/>
+						</div>
+						
+						<div class="b-carousel-show__item-title">
+							<div class="b-main-center">
+								Вы увидите Спальни, Гостиные, Кухни, Прихожие, Детские, Диваны
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="b-carousel-show__arrows">
+					<div class="b-main-center">
+						<div class="b-carousel-show__next"></div>
+						<div class="b-carousel-show__prev"></div>
+					</div>
+				</div> 
+				<div class="b-carousel-show__button">
+					<div class="b-main-center">
+						<a href="" class="b-link-round b-carousel-show__link">Как добраться</a>
+					</div>
+				</div>
+				<div class="b-carousel-show__nav"></div>
+			</div>
+			
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_map">
+			<div class="b-map">
+				<div class="b-map-in" id="yandexMap">
+					<div class="b-map__hover"></div>
+				</div>
+				<h2 class="b-map__title">Ближайшая выставка на карте города</h2>
+				<div class="b-map-content">
+					
+					<div class="b-main-center">
+						<a href="javascript:void(0)" class="b-link-round b-map-show" data-change-text="Свернуть">Развернуть</a>
+					</div>
+				</div>
+			</div>
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_video">
+			<div class="b-main-center">
+				<div class="b-video">
+					<h2 class="b-video__text">Впечатлитесь представленными<br/>экземплярами на выставке</h2>
+					<a href="javascript:void(0)" onclick="showPopup($('#videoPopup'))" class="b-video__show"></a>
+				</div>
+			</div>
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_services">
+			<div class="b-main-center">
+				<h2>Наши услуги</h2>
+				<div class="b-services">
+					<div class="b-services__picture"><img src="images/services-picture-1.jpg" alt="" class="g-animated" data-animate-name="opacity" /></div>
+					
+					<div class="b-services-list">
+						<div class="b-services-list__item g-animated" data-animate-name="fadeIn">
+                            <a href="#" title="Оплата"><img class="b-services-list__picture" src="images/icon-pay.png" alt=""/></a>
+                            <h3 class="b-services-list__title"><a href="#" title="Оплата">Оплата</a></h3>
+							<a href="#" title="подробнее" class="b-services-list__link">подробнее</a>
+						</div>
+						<div class="b-services-list__item g-animated" data-animate-name="fadeIn">
+                            <a href="#" title="Доставка"><img class="b-services-list__picture" src="images/icon-car.png" alt=""/></a>
+                            <h3 class="b-services-list__title"><a href="#" title="Доставка">Доставка</a></h3>
+							<a href="#" title="подробнее" class="b-services-list__link">подробнее</a>
+						</div>
+						<div class="b-services-list__item g-animated" data-animate-name="fadeIn">
+                            <a href="#" title="Сборка"><img class="b-services-list__picture" src="images/icon-assembly.png" alt=""/></a>
+							<h3 class="b-services-list__title"><a href="#" title="Сборка">Сборка</a></h3>
+							<a href="#" title="подробнее" class="b-services-list__link">подробнее</a>
+						</div>
+						<div class="g-clear"></div>
+					</div>
+					
+				</div>
+			</div>
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_show">
+		
+			<div class="b-carousel-show g-animated" id="carouselFactory" data-animate-name="opacity">
+				<div class="b-carousel-show-in">
+					<div class="b-carousel-show__item">
+						<div class="b-carousel-show__item-pic">
+							<img src="images/temp/section-factory-1.jpg" alt="" />
+						</div>
+						
+						<div class="b-carousel-show__item-title">	
+							<div class="b-main-center">
+								Зачем мы используем немецкие и итальянские станки?
+							</div>
+						</div>
+					</div>
+					
+					<div class="b-carousel-show__item">
+						<div class="b-carousel-show__item-pic">
+							<img src="images/temp/section-factory-2.jpg" alt=""/>
+						</div>
+						
+						<div class="b-carousel-show__item-title">
+							<div class="b-main-center">
+								<div style="font-size:69%;">Для экономии затрат на 15% Благодаря серийному автоматизированному высокоточному производству.</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="b-carousel-show__arrows">
+					<div class="b-main-center">
+						<div class="b-carousel-show__next"></div>
+						<div class="b-carousel-show__prev"></div>
+					</div>
+				</div> 
+				<div class="b-carousel-show__button">
+					<div class="b-main-center">
+						<a href="#" class="b-link-round b-carousel-show__link">Подробнее</a>
+					</div>
+				</div>
+				<div class="b-carousel-show__nav"></div>
+			</div>
+			
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_arguments">
+			<div class="b-main-center">
+				<h2>Аргументы в пользу правильного решения</h2>
+				<div class="b-arguments">
+					<div class="b-arguments__text">Каждый клиент Александрии Мебель получает не только товар, который он заказал в нашем Интернет-магазине или приобрел в на выставке, но ряд преимуществ, которыми не могут похвастаться другие производители</div>
+					
+					<div class="b-arguments-list">
+						<div class="b-arguments-list__item g-animated" data-animate-name="fadeIn">
+							<img class="b-arguments-list__picture" src="images/arguments-picture-1.png" alt="" />
+							<h3 class="b-arguments-list__title">Доставка в день заказа</h3>
+						</div>
+						
+						<div class="b-arguments-list__item g-animated" data-animate-name="fadeIn">
+							<img class="b-arguments-list__picture" src="images/arguments-picture-2.png" alt="" />
+							<h3 class="b-arguments-list__title">Цены ниже рыночных</h3>
+						</div>
+						
+						<div class="b-arguments-list__item g-animated" data-animate-name="fadeIn">
+							<img class="b-arguments-list__picture" src="images/arguments-picture-3.png" alt="" />
+							<h3 class="b-arguments-list__title">700м<sup>2</sup><br/>выставка</h3>
+						</div>
+						
+						<div class="b-arguments-list__item g-animated" data-animate-name="fadeIn">
+							<img class="b-arguments-list__picture" src="images/arguments-picture-4.png" alt="" />
+							<h3 class="b-arguments-list__title">3500<br/>товаров</h3>
+						</div>
+						
+						<div class="b-arguments-list__item g-animated" data-animate-name="fadeIn">
+							<img class="b-arguments-list__picture" src="images/arguments-picture-5.png" alt="" />
+							<h3 class="b-arguments-list__title">Сборка<br/>мебели</h3>
+						</div>
+						
+						<div class="b-arguments-list__item g-animated" data-animate-name="fadeIn">
+							<img class="b-arguments-list__picture" src="images/arguments-picture-6.png" alt="" />
+							<h3 class="b-arguments-list__title">Без<br/>предоплаты</h3>
+						</div>
+
+						<div class="g-clear"></div>
+					</div>
+					
+				</div>
+			</div>
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_banner">
+			<div class="b-main-center">
+				<a href="#" title=""><img src="images/temp/banner.jpg" alt=""/></a>
+			</div>
+		</section> <!-- end b-index-section -->
+		
+		<section class="b-index-section b-index-section_questions">
+			<div class="b-main-center">
+				<h2>У вас остались вопросы?</h2>
+				
+				<div class="b-carousel b-carousel_questions g-animated" id="carouselQuestions" data-animate-name="opacity">
+					<div class="b-carousel-in">
+						<div class="b-carousel__item">
+							<div class="b-carousel_questions__item-title"><a href="#" title="Что делать если сломался диван?"><i>Что делать если сломался диван?</i></a></div>
+							<div class="b-carousel__item-text">Популярные товары - название, фото (Чем крупнее тем лучше), цена, Купить, подробнее. фото максимально большое…</div>
+							<div class="b-carousel_questions__item-link"><a href="#" title="Подробнее">Подробнее</a></div>
+							<div class="b-carousel__item-border"></div>
+						</div>
+						
+						<div class="b-carousel__item">
+							<div class="b-carousel_questions__item-title"><a href="#" title="Что делать если сломался диван?"><i>Что делать если сломался диван?</i></a></div>
+							<div class="b-carousel__item-text">Популярные товары - название, фото (Чем крупнее тем лучше), цена, Купить, подробнее. фото максимально большое…</div>
+							<div class="b-carousel_questions__item-link"><a href="#" title="Подробнее">Подробнее</a></div>
+							<div class="b-carousel__item-border"></div>
+						</div>
+						
+						<div class="b-carousel__item">
+							<div class="b-carousel_questions__item-title"><a href="#" title="Что делать если сломался диван?"><i>Что делать если сломался диван?</i></a></div>
+							<div class="b-carousel__item-text">Популярные товары - название, фото (Чем крупнее тем лучше), цена, Купить, подробнее. фото максимально большое…</div>
+							<div class="b-carousel_questions__item-link"><a href="#" title="Подробнее">Подробнее</a></div>
+							<div class="b-carousel__item-border"></div>
+						</div>
+						
+						<div class="b-carousel__item">
+							<div class="b-carousel_questions__item-title"><a href="#" title="Что делать если сломался диван?"><i>Что делать если сломался диван?</i></a></div>
+							<div class="b-carousel__item-text">Популярные товары - название, фото (Чем крупнее тем лучше), цена, Купить, подробнее. фото максимально большое…</div>
+							<div class="b-carousel_questions__item-link"><a href="#" title="Подробнее">Подробнее</a></div>
+							<div class="b-carousel__item-border"></div>
+						</div>
+					</div>
+					<div class="g-clear"></div>
+					
+					<div class="b-carousel__prev"></div>
+					<div class="b-carousel__next"></div>
+				</div> <!-- end b-carousel -->
+				
+				<div class="b-questions-btn">
+					<a href="#" title="Все вопросы" class="b-link-round b-link-round_questions">Все вопросы</a>
+					<a href="javascript:void(0)" title="Обратный звонок" onclick="showPopup($('#orderCall'))" class="b-link-round b-link-round_questions">Обратный звонок</a>
+				</div>
+			</div>
+		</section> <!-- end b-index-section -->
+		
+		<footer class="b-footer b-main-center">
+			
+			<div class="b-footer-section">
+				<div class="b-footer-menu">
+					<ul class="b-footer-menu-list">
+						<li class="b-footer-menu__item b-footer-menu__item_first">Информация</li>
+						<li class="b-footer-menu__item"><a href="#" title="Контакты">Контакты</a></li>
+						<li class="b-footer-menu__item"><a href="#" title="Доставка">Доставка</a></li>
+						<li class="b-footer-menu__item"><a href="#" title="О фабрике">О фабрике</a></li>
+						<li class="b-footer-menu__item"><a href="#" title="Вопрос-ответ">Вопрос-ответ</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="b-footer-section">
+				<div class="b-footer-menu">
+					<ul class="b-footer-menu-list">
+						<li class="b-footer-menu__item b-footer-menu__item_first">Продукция</li>
+						<li class="b-footer-menu__item"><a href="#" title="Кухни">Кухни</a></li>
+						<li class="b-footer-menu__item"><a href="#" title="Кровати">Кровати</a></li>
+						<li class="b-footer-menu__item"><a href="#" title="Шкафы">Шкафы</a></li>
+						<li class="b-footer-menu__item"><a href="#" title="Столы">Столы</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="b-footer-section">
+				<ul class="b-social-list">
+					<li class="b-social-list__item b-social-list__item_first">Мы в социальных сетях</li>
+					<li class="b-social-list__item">
+						<a href="#" title="Google+"><img src="images/icon-soc-google.png" alt=""/></a><a href="#" title="Facebook"><img src="images/icon-soc-facebook.png" alt=""/></a><a href="#" title="VK"><img src="images/icon-soc-vk.png" alt=""/></a><a href="#" title="Twitter"><img src="images/icon-soc-twitter.png" alt=""/></a>
+					</li>
+				</ul>
+			</div>
+			<div class="g-clear"></div>
+			
+			<div class="b-copyright">
+				2014 &copy; Александрия Корпусная Мебель. Все права защищены.
+				<div class="b-created-by"><a href="#" title="3Core" target="_blank"><img src="images/logo-created-by.png" alt=""/></a></div>
+			</div>
+			
+		</footer> <!-- end b-footer -->
+		
+	</div> <!-- end b-main -->
+
+    Тестирую Git
+</body>
+</html>

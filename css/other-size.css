@@ -1,0 +1,225 @@
+
+/* WIDTH */
+
+@media screen and (max-width: 980px) {
+	.b-menu-block__right {
+		width:100%;
+	}
+	
+	/* POPUP */
+	.b-popup_video iframe {
+		min-height:300px;
+	}
+}
+
+@media screen and (max-width: 966px) {
+	/* SECTION CATALOG */
+	
+	.b-catalog__item-pic {
+		width:30%
+	}
+	
+	.b-catalog__item {
+		margin:0 0 28px 3%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	/* SECTION FURNITURE */
+	
+	.b-index-section .b-furniture__title {
+		font-size:50px;
+		line-height:60px;
+	}
+}
+
+@media screen and (max-width: 885px) {
+	/* FIXED HEADER */
+	
+	.b-header_fixed .b-header-right {
+		display:none;
+	}
+	
+	.b-header_fixed .b-menu-block {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	/* SECTION SHOW */
+	
+	.b-carousel-show__item-title {
+		font-size:30px;
+	}
+	
+	.b-carousel-show__button {
+		bottom:25%;
+	}
+	
+	.b-carousel-show__link {
+		line-height:31px;
+	}
+	
+	/* FIXED HEADER */
+	.b-header_fixed .b-furniture__link a {
+		min-width:218px;
+		height:32px;
+		line-height:32px;
+		font-size:14px;
+		border-width:2px;
+	}
+}
+
+@media screen and (max-width: 535px) {	
+	/* TOP MENU */
+	
+	.b-menu-sub__list {
+		margin-top:0;
+	}
+	
+	/* SECTION FURNITURE */
+	
+	.b-index-section .b-furniture__title {
+		font-size:40px;
+		line-height:50px;
+	}
+}
+
+@media screen and (max-width: 505px) {
+	/* SECTION FURNITURE */
+	
+	.b-index-section .b-furniture__title {
+		font-size:40px;
+		line-height:50px;
+	}
+	
+	.b-furniture__catalog {
+		margin-top:8px;
+	}
+	
+	.b-furniture__link {
+		margin-top:40px;
+	}
+	
+	/* SECTION SERVICES */
+	
+	.b-services-list__title {
+		font-size:26px;
+	}
+	
+	/* SECTION ARGUMENTS */
+	
+	.b-arguments-list__item {
+		height:200px;
+	}
+	
+	.b-arguments-list__title {
+		font-size:20px;
+	}
+	
+	/* FIXED HEADER */
+	.b-header_fixed {
+		text-align:center;
+	}
+	
+	.b-header_fixed .b-logo {
+		margin-top:10px;
+		float:none;
+	}
+
+	.b-header_fixed .b-furniture__link {
+		float:none;
+		margin:0 10%;
+	}
+	
+	.b-header_fixed .b-header-right {
+		display:none;
+	}
+	
+	.b-header_fixed .b-menu-block {
+		display:none;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+	/* INDEX SECTIONS */
+	
+	.b-index-section h2 {
+		font-size:36px;
+	}
+	
+	/* SECTION FURNITURE */
+	
+	.b-furniture-plus__item-text {
+		font-size:20px;
+	}
+	
+	.b-furniture__link {
+		font-size:18px;
+	}
+	
+	/* SECTION POPULAR */
+	
+	.b-carousel {
+		margin-top:45px;
+	}
+	
+	.b-index-section_popular .b-btn-buy {
+		padding:0 40px;
+	}
+	
+	.b-carousel__item-price {
+		font-size:26px;
+		height:50px;
+	}
+	
+	.b-carousel__item-pic {
+		height:150px;
+	}
+	
+	.b-carousel__nav {
+		margin-top:40px;
+	}
+	
+	/* SECTION SHOW */
+	
+	.b-carousel-show__item-title {
+		font-size:20px;
+		bottom:55%;
+	}
+	
+	.b-carousel-show__arrows {
+		display:none;
+	}
+	
+	/* SECTION SERVICES */
+	
+	.b-services-list__title {
+		font-size:20px;
+	}
+	
+	/* SECTION ARGUMENTS */
+	
+	.b-arguments-list__title {
+		font-size:18px;
+	}
+}
+
+/* HEIGHT */
+
+@media screen and (max-height: 800px) {
+	/* SECTION FURNITURE */
+	
+	.b-furniture {
+		margin-top:20px;
+	}
+	
+	.b-furniture__link {
+		margin-top:30px;
+	}
+	
+	.b-furniture-plus {
+		margin-top:30px;
+	}
+}
